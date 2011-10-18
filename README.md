@@ -11,11 +11,18 @@ This gem comes with a list of countries built in, but you can provide a custom Y
     
 ## Configuration
 
+Countries works out of the box. The below is optional.
+
     Countries.configure do |config|
       config.locale = :en # Use english country names (default)
       config.priority = [:us, :ca, :au] # Copy these countries to the top of the list
     end
-
+    
+    # Provide a custom list of countries
+    Countries.configure do |config|
+      config.locale = :fr
+      config.file_path = File.join(Rails.root.to_s, "config", "locales", "countries_fr.yml")
+    end
 
 ## Usage
 
