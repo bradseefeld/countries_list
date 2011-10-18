@@ -32,3 +32,10 @@ This gem comes with a list of countries built in, but you can provide a custom Y
     
     # With a default value
     <%= country_select("user", "country_code", {:value => "US"})
+    
+## TODO
+
+* Add formtastic input class
+* Add formtastic example
+* Support more languages than just en US
+* Increase test coverage. Specifically with rails integration
