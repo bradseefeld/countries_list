@@ -29,3 +29,6 @@ This gem comes with a list of countries built in, but you can provide a custom Y
     
     # In views. This behaves just like select() but you do not have to specificy the options
     <%= country_select("user", "country_code") %>
+    
+    # With a default value
+    <%= country_select("user", "country_code", {:value => "US"})
