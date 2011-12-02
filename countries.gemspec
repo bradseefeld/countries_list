@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Countries::VERSION
   s.authors     = ["Brad Seefeld"]
   s.email       = ["bradely.seefeld@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/bradseefeld/countries/wiki"
   s.summary     = %q{A library to provide a list of all countries}
   s.description = %q{Provides a country select form helper and integrates with formtastic.}
 
