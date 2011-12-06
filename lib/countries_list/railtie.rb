@@ -1,15 +1,15 @@
 require "countries/rails/countries_select_helper"
 
-module Countries
+module CountriesList
   class Railtie < ::Rails::Railtie
     
     initializer "countries.initialize" do
 
       if defined? ActionView::Base
-        ActionView::Base.send(:include, Countries::Rails::CountriesSelectHelper)
+        ActionView::Base.send(:include, CountriesList::Rails::CountriesListSelectHelper)
       end
       
-      Countries.configure do |config|
+      CountriesList.configure do |config|
         config.locale = I18n.locale
       end
     end

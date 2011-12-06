@@ -1,9 +1,9 @@
 require "yaml"
-require "countries/version"
-require "countries/configuration"
-require "countries/railtie" if defined? Rails
+require "countries_list/version"
+require "countries_list/configuration"
+require "countries_list/railtie" if defined? Rails
 
-module Countries
+module CountriesList
   
   def self.configure
     yield(config)

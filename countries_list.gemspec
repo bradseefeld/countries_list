@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "countries/version"
+require "countries_list/version"
 
 Gem::Specification.new do |s|
   s.name        = "countries"
-  s.version     = Countries::VERSION
+  s.version     = CountriesList::VERSION
   s.authors     = ["Brad Seefeld"]
   s.email       = ["bradely.seefeld@gmail.com"]
   s.homepage    = "https://github.com/bradseefeld/countries/wiki"
