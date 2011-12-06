@@ -1,9 +1,9 @@
-require "countries/rails/countries_select_helper"
+require "countries_list/rails/countries_select_helper"
 
 module CountriesList
   class Railtie < ::Rails::Railtie
     
-    initializer "countries.initialize" do
+    initializer "countries_list.initialize" do
 
       if defined? ActionView::Base
         ActionView::Base.send(:include, CountriesList::Rails::CountriesListSelectHelper)
